@@ -108,5 +108,31 @@ img {
     font-size: 32px;
     padding: 12px;
     background-color: var(--cor-primaria);
+    /* Cores padrão (Tema Claro) */
+body {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s; /* Suaviza a transição */
+}
+
+/* Cores quando o Modo Escuro estiver ativo */
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+}
+
+/* Estilização opcional para o seu botão */
+.btn-tema-escuro {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+}
+
     border-radius: 50%;
 }
